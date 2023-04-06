@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 #Escribí un programa que lea todos los archivos .txt de una carpeta dada (Carpeta1) y los añada a un archivo
 # dentro de la carpeta Resultado, que a su vez se tiene que encontrar dentro de Carpeta1.
-import os
+
+import os, glob
 
 # Definimos la ruta de la carpeta que contiene los archivos de texto
 carpeta1 = "Práctica"
@@ -18,12 +19,10 @@ with open(archivo_salida, "w") as archivo:
     
 # Recorremos todos los archivos en la carpeta "Carpeta1"
     for archivo_nombre in os.listdir(carpeta1):
-        
 # Comprobamos si el archivo es un archivo de texto  
-        if archivo_nombre.endswith(".txt"):
-            
-           
+        if archivo_nombre.endswith(".txt"): 
+                txt = glob.glob("*.txt")
 # Leemos el contenido del archivo y lo escribimos en el archivo de salida 
-            with open(os.path.join(carpeta1, archivo_nombre), "r") as archivo_lectura:
-                contenido = archivo_lectura.read()
-                archivo.write(contenido)
+                with open(os.path.join(carpeta1, archivo_nombre), "r") as archivo_lectura:
+                    contenido = archivo_lectura.read()
+                    archivo.write(contenido)

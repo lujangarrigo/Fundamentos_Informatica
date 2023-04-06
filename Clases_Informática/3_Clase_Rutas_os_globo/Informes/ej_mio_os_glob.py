@@ -3,7 +3,7 @@ import glob
 """Ej hecho por mi"""
 
 # Movemos a la carpeta Informes
-os.chdir('C:\Users\lujan\OneDrive\Escritorio\carpeta vacía\Informes')
+os.chdir("C:\Users\lujan\Downloads\WBDSLA_Camp\Fundamentos_Informatica\Clases_Informática\3_Clase_Rutas_os_globo\Informes")
 # Obtenemos los archivos .txt en la carpeta
 archivos_txt = glob.glob('*.txt')
 # Inicializamos un diccionario para almacenar los resultados

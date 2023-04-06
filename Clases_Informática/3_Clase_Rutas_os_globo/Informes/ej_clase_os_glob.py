@@ -15,15 +15,14 @@ def ejercicio_rutas():
     cantidad_lineas = [] #cuenta la cantidad de lineas de cada archivo
     for archivo in txt: 
         with open(archivo,"r") as file: #abrimos los archivos
-            file_completa = file.read #readline se usa en for pq lee una linea y pasa a la otra, va a contar si estado está dos veces en una linea (readlines no)
+            file_completa = file.read() #readline se usa en for pq lee una linea y pasa a la otra, va a contar si estado está dos veces en una linea (readlines no)
             cantidad_estado.append(file_completa.count("estado"))
             cantidad_lineas.append(file_completa.count("\n"))
     os.mkidr("Apellido")
     with open("Apellido/Lista.txt","w") as salida: #usamos salida cuando abrimos un archivo.txt que vamos a escribir
         for archivo in txt:
             with open(archivo,"r") as file: #file es la variable q usamos al abrir un archivo.txt q vamos a leer
-                salida.wrtite(file.readline())
+                salida.write(file.readline())
     return cantidad_estado , cantidad_lineas
 #Se ejecuta desde bash poniendo python ej1 + tab
-c1, c2 =ejercicio_rutas()
-print(c1,c2)
+c1, c2 = ejercicio_rutas()

@@ -12,3 +12,4 @@ print("Obteniendo información del archivo", archivo)
 estadisticas = os.stat(archivo)
 print("Pesa:", estadisticas.st_size, "bytes")
 print("Modificado por última vez:", datetime.utcfromtimestamp(estadisticas.st_atime).strftime('%Y-%m-%d %H:%M:%S'))
+#Se ejecuta poniendo en la terminal de bash: python stats.py 'archivo1.txt'

@@ -2,15 +2,11 @@
 #Escribí un programa que lea un archivo, reemplace una letra por esa misma letra más un salto de línea y
 #lo guarde en otro archivo.
 
-# Abrimos el archivo de entrada en modo lectura
-with open('archivo1.txt', 'r') as archivo:
-    # Leemos todo el contenido del archivo
-    contenido = archivo.read()
+def remplazo(letra, archivo):
+    with open(archivo, 'r') as file:
+        contenido = file.read() #lee todo el contenido del archivo
+    contenido_modificado = contenido.replace(letra, letra + "\n")
+    with open('archivo_salida_remplazo.txt', 'w') as archivo_salida:
+        archivo_salida.write(contenido_modificado) # Escribimos el contenido modificado en el archivo de salida
 
-# Reemplazamos la letra 'a' por 'a\n'
-contenido_modificado = contenido.replace('a', 'a\n')
-
-# Abrimos el archivo de salida en modo escritura
-with open('archivo_salida.txt', 'w') as archivo_salida:
-    # Escribimos el contenido modificado en el archivo de salida
-    archivo_salida.write(contenido_modificado)
+remplazo("a", "archivo1.txt")

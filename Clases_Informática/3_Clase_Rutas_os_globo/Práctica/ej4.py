@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 #Hacé un programa que lea un archivo, cuente la cantidad de palabras del archivo y luego imprima el resultado.
 
-# Abre el archivo en modo lectura
-with open('archivo1.txt', 'r') as archivo:
-# Lee el contenido del archivo y conviértelo en una sola cadena
-    contenido = archivo.read()
+def contador_palabras(archivo):
+    with open(archivo, 'r') as file:
+        contenido = file.read() # Lee el contenido del archivo y lo convierte en una sola cadena
+        palabras = contenido.split() # Divide el contenido en palabras (split divide por espacios en blanco)
+        cantidad_palabras = len(palabras) #Cuenta la cantidad de palabras
+        print(f"El archivo contiene {cantidad_palabras} palabras.")
 
-# Divide el contenido en palabras y cuenta la cantidad de palabras
-palabras = contenido.split()
-cantidad_palabras = len(palabras)
-
-# Imprime la cantidad de palabras del archivo
-print(f"El archivo contiene {cantidad_palabras} palabras.")
+contador_palabras("archivo1.txt")

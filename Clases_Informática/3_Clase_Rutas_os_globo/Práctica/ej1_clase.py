@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#ej 1: Realizá un programa que lea un archivo e imprima con líneas de ese archivo no empiecen con una letra
+# determinada (por ejemplo, que imprima líneas no empiecen con "P").
 def start_with(letra,archivo):
     count=0
     with open(archivo,"r") as archivo:

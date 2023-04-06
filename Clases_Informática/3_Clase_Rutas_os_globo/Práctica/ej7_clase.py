@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+#Escribí un porgrama que lea un archivo e identifique la palabra más larga, la cual debe imprimir y 
+#decir cuantos caracteres tiene.
+
 def longest_word(archivo):
     max_long = 0
     palabra = ""
