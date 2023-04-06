@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #Ej 2: Definir un procedimiento que tome una lista como parámetro y elimine el primer elemento de la lista.
 #  Hacer las verificaciones que sean necesarias.
 

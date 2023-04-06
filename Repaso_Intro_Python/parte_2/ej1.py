@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #Ej 1: Definir un procedimiento que tome como parámetro una lista, 
 # verifique si tiene el elemento "control" y le agregue el string 
 # "revisado" y le quite el elemento "control"

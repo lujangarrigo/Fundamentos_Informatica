@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #Modificá la función anterior para que además imprima los caracteres que no aparecen en la cadena, 
 #pero con el valor 0.
 string = "Hola, te envío este mensaje para avisarte que el martes se recuperará la clase de Contabilidad, saludos."

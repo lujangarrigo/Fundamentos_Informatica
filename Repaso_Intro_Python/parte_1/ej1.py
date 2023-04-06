@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #ejercicio 1: Escribir funciones que permitan obtener el anterior y el siguiente de un número
 # (Hecho en clase)
 def siguiente(numero):

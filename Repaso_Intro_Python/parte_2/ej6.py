@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #Escribir una función que lea un string y devuelva un diccionario con la cantidad de apariciones de cada 
 #carácter en la cadena (considerar que las mayúsculas difieren de las minúsculas, por lo que, si el string 
 #es "Agua", el carácter "A" tiene 1 aparición y el carácter "a" también tiene 1).

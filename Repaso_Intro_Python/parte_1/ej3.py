@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 #Ejercicio 3: Escribir funciones que obtengan el doble del anterior y el doble del siguiente de un número.
 # (Hecho en clase)
 def siguiente(numero):

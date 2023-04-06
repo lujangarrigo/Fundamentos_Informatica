@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #Definir una función que dada una palabra, nos diga si el palíndromo o no.
 cadena = input("Introduzca palabra: ")
 def palindromo(cadena):

@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 # Ejercicio 12: Escribir una función que reciba como parámetro un string y nos diga si el string
 # empieza con "Buenos" o "Buenas".
 # (Hecho en clase)

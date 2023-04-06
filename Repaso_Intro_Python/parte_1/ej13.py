@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 # Ejercicio 13: Escribir una función llamada es_multiplo que reciba dos números
 # y diga si el segundo es múltiplo del primero
 

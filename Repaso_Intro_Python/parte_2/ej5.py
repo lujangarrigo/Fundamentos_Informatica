@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #Escribir una función que tome como parámetro una lista de enteros y devuelva una lista con valores booleanos 
 #que indique si cada elemento es par o impar. Por ejemplo, para la lista [2, 45, 108, 12, 7], la función
 #debería retornar [True, False, True, True, False]. Utilizar la función realizada en la práctica anterior.

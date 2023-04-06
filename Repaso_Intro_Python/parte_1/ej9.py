@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 # Ejercicio 9: Escribir una función xor que tome como parámetro dos booleanos y
 #  retorne el booleano correspondiente con la tabla.
 def xor(booleano1, booleano2):

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Ej 10: Creá un programa para gestionar datos de los socios de un club, el cual permita:
 
 a) Cargar la información de los socios en un diccionario, al cual poder acceder por número de socio. 

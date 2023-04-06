@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 # Ejercicio 14: Escribir una función que nos diga si un número es par, impar o cero.
 def par(numero):
    if numero % 2 == 0:
