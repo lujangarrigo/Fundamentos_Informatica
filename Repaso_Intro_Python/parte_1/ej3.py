@@ -7,7 +7,12 @@ def siguiente(numero):
 def anterior(numero):
    return numero - 1
 
-def doble(numero):
-   return str(doble(anterior(numero))) + " y " + str(doble(siguiente(numero)))
+def doble1(numero):
+   return numero * 2
 
-print(doble(4))
+
+def doble2(numero):
+   return str(doble1(anterior(numero))) + " y " + str(doble1(siguiente(numero))) 
+#str se usa para convertir el número en string y poder concatenar strings con el +
+
+print(doble2(4))
