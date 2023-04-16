@@ -4,7 +4,7 @@
 import re
 def dos_P(lista):
     for elemento in lista:
-        resultado = re.match("(P\w*)\W(P\w*)", elemento) #Puedo poner \W o \S (espacio). Puedo usar * o +.
+        resultado = re.match("(P\w*)\W(P\w*)", elemento) #Puedo poner \W o \s (espacio). Puedo usar * o +.
         if resultado is not None:
             print(resultado.group())
 lista = ["Práctica Python","Práctica C++", "Práctica Fortran"]
