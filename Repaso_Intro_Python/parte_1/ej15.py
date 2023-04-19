@@ -5,7 +5,6 @@
 def contador_de_a(frase):
    contador = 0
    for caracter in frase:
-      print(caracter)
       if caracter == "a" or caracter == "A":
          contador += 1
       else:

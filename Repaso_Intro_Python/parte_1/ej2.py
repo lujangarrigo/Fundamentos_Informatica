@@ -3,4 +3,4 @@
 def doble(numero):
    return numero * 2
 
-print(doble(int(input("Ingrese número: "))))
+print(doble(2))

@@ -8,9 +8,3 @@ def dia_de_la_semana_favorito(dia):
 
 print(dia_de_la_semana_favorito("Sábado"))
 print(dia_de_la_semana_favorito("Viernes"))
-
-def pasar_un_dia_normal(): 
-   dias_sin_accidentes_con_velocirraptores = 10
-   dias_sin_accidentes_con_velocirraptores = dias_sin_accidentes_con_velocirraptores + 1
-pasar_un_dia_normal()
-print(pasar_un_dia_normal)

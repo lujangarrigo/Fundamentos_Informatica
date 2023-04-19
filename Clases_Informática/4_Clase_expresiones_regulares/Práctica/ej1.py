@@ -7,3 +7,4 @@ def caracteres_permitidos(string):
 """print(bool(4)) #Devuelve true
 print(bool(None)) #Devuelve falso"""
 print(caracteres_permitidos("ABCja578"))
+print(re.search('[a-zA-Z]', "ABCja578"))
