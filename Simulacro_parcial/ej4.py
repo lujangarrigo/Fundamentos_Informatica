@@ -1,9 +1,9 @@
 #a)
 class Pacman:
-    def __init__(self, vidas):
-        self.vida = vidas
+    def __init__(self):
+        self.vida = 3
         self.puntos = 0
-        self.velocidad = 2
+        self.velocidad = 1
 
     def comer_bolitas(self,cantidad):
         self.puntos += cantidad
