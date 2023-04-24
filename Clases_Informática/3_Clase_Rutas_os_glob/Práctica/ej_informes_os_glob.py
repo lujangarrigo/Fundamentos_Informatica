@@ -7,9 +7,9 @@ y por otro lado la cantidad de líneas. Por último, hay que crear una carpeta q
  hay que crear un archivo llamado Lista.txt que contenga en cada línea la primera línea de cada archivo .txt 
  obtenida anteriormente."""
 import os, glob
-
+ 
 def ejercicio_rutas():
-    os.chdir('informes')#Suponemos que estamos dentro de la carpeta, si está carpetas arriba se hace ../../
+    os.chdir('../informes')#Suponemos que estamos dentro de la carpeta, si está carpetas arriba se hace ../../
     txt = glob.glob("*.txt")
     cantidad_estado = [] #va a contar la cantidad que hay "estado" en cada archivo
     cantidad_lineas = [] #cuenta la cantidad de lineas de cada archivo

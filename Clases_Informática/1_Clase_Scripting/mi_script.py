@@ -1,6 +1,6 @@
 #!/bin/python3
 import os, sys
-
+ 
 usuario = sys.argv[1] 
 # argv es argumento, esto es para declarar una variable
 #Espera que le pase el argumento en la terminal

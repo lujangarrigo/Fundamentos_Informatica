@@ -9,7 +9,7 @@ import os
 file_path1 = sys.argv[1]
 file_path2 = sys.argv[2]
 
-
+ 
 #Abrir archivo con read
 with open(file_path1) as f1:
    #readLines lee el archivo y lo guarda en array
