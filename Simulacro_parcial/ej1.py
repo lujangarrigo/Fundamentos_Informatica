@@ -20,6 +20,6 @@ def funcionDeExpresiones_Regulares():
 def funcionDeExpresiones_Regulares(string):
     return re.findall("ag(\d.*?)cta",string)
 
-print(funcionDeExpresiones_Regulares("aaggaaactazu4lggaasag24gra1ndecta"))
+print(funcionDeExpresiones_Regulares("aabocaggaaactazu4lggaasag24gra1ndecta"))
 
 #4: Incorrecto: 
