@@ -1,9 +1,8 @@
 #a)
 import re
-def caracteres_permitidos(string):
-    return bool(re.search('X*ab*Y', string)) 
-print(re.search("X*Y", "YabhdkabX"))
-print(caracteres_permitidos("YabhdkabX"))
+def buscar_subsecuencias(string):
+    return re.findall("X(\w?ab\w?.*?)Y",string)
+print(buscar_subsecuencias("XbaaaYjXababYqXbabbbbaaYqXffeeeY"))
 
 #b) 
 def funcionDeExpresiones_Regulares():
@@ -22,4 +21,6 @@ def funcionDeExpresiones_Regulares(string):
 
 print(funcionDeExpresiones_Regulares("aabocaggaaactazu4lggaasag24gra1ndecta"))
 
-#4: Incorrecto: 
+#4: Incorrecto: devuelve ['24gra1nde'] porque busca lo que está encerrado por ag y cta, pero con mínimo un digito luego de ag
+
+#5: Correcto
