@@ -1,9 +1,13 @@
 #Ejercicio 15
 #Realizá un programa que valide si una cuenta de mail está escrita correctamente.
 
-
 import re
-def mail(string):
-    patron = "^.+@gmail\.com$"
-    return bool(re.search(patron, string))
-print(mail("lujan_garrigo@gmail.com"))
+def mail_correcto(string):
+    return bool(re.search('^[a-z0-9]+[.-]?[a-z0-9]+[.-]?\w*@[a-z]+[.][a-z]+[.]?[a-z]?$',string)) #[.] o \.
+
+print(mail_correcto("lujan.garrigo@gmail.com"))
+print(mail_correcto("lujan-garrigo@gmail.com"))
+print(mail_correcto("lujan_garrigo_@gmail.com"))
+print(mail_correcto("HRackham@gmail.com"))
+
+print(re.search('[a-z]',"hola")) #[.] o \.)
