@@ -5,9 +5,10 @@
 with open('archivo1.txt', 'r') as archivo:
 # Lee el contenido del archivo y conviértelo en una sola cadena
     contenido = archivo.read()
-
+print(contenido)
 # Divide el contenido en palabras y cuenta la cantidad de palabras
-palabras = contenido.split()
+palabras = contenido.split() #Split divide las palabras según los espacios en blanco
+print(palabras)
 cantidad_palabras = len(palabras)
 
 # Imprime la cantidad de palabras del archivo
