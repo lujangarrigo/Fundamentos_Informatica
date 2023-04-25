@@ -11,5 +11,5 @@ with open('archivo1.txt', 'r') as archivo:
 # Imprime las últimas 5 líneas de la lista
     print("Las últimas 5 líneas del archivo son:")
 # 0, 1, 2   neg: -5, -4, -3, -2, -1
-    for linea in lineas[-5:-1]:
+    for linea in lineas[-5:]:
         print(linea.strip())

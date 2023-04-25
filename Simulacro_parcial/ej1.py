@@ -1,7 +1,7 @@
 #a)
 import re
 def buscar_subsecuencias(string):
-    return re.findall("X(\w?ab\w?.*?)Y",string)
+    return re.findall("X(\w*ab\w*?)Y",string)
 print(buscar_subsecuencias("XbaaaYjXababYqXbabbbbaaYqXffeeeY"))
 
 #b) 

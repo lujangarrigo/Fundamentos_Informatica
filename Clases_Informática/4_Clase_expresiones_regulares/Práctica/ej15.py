@@ -8,6 +8,5 @@ def mail_correcto(string):
 print(mail_correcto("lujan.garrigo@gmail.com"))
 print(mail_correcto("lujan-garrigo@gmail.com"))
 print(mail_correcto("lujan_garrigo_@gmail.com"))
-print(mail_correcto("HRackham@gmail.com"))
 
 print(re.search('[a-z]',"hola")) #[.] o \.)

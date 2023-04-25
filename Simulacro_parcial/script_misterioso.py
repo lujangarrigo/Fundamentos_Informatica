@@ -18,3 +18,5 @@ def trasladar(una_lista, otra_lista, elemento):
 lista = [2,5,8]
 listita = []
 trasladar(listita, lista, 2)
+
+#NO ENTRA EXCEPCIONES

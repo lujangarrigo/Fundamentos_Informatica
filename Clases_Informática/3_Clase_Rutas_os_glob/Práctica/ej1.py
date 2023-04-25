@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-#ej 1: Realizá un programa que lea un archivo e imprima con líneas de ese archivo no empiecen con una letra
-# determinada (por ejemplo, que imprima líneas no empiecen con "P").
+#ej 1: Realizá un programa que lea un archivo e imprima cuántas líneas de ese archivo no empiecen con una letra
+# determinada (por ejemplo, que imprima líneas que no empiecen con "P").
 letra = "P"  # letra a excluir
 nombre_archivo = "archivo1.txt"  # nombre del archivo a leer
 

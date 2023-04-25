@@ -13,3 +13,4 @@ cantidad_palabras = len(palabras)
 
 # Imprime la cantidad de palabras del archivo
 print(f"El archivo contiene {cantidad_palabras} palabras.")
+print("El archivo contiene", cantidad_palabras, " palabras.")
