@@ -26,3 +26,4 @@ def ejercicio_rutas():
     return cantidad_estado, cantidad_lineas
 
 c1, c2 = ejercicio_rutas()
+print(c1,c2)
