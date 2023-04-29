@@ -1,8 +1,19 @@
 #a)
 import re
-def buscar_subsecuencias(string):
-    return re.findall("X(\w*ab\w*?)Y",string)
-print(buscar_subsecuencias("XbaaaYjXababYqXbabbbbaaYqXffeeeY"))
+def entre_X_Y_con_ab(string):
+    return re.findall("X(\w?ab\w*?)Y",string)
+print(entre_X_Y_con_ab("XbaaaYjXababYqXbabbbbaaYqXffeeeY"))
+
+
+
+
+
+
+
+
+
+
+
 
 #b) 
 def funcionDeExpresiones_Regulares():

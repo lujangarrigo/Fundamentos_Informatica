@@ -1,10 +1,13 @@
 import re
 #a)
 def entre_X_Y_con_ab(string):
-    patron = "X(.*?ab.*?)Y"
+    patron = "X(\w*ab\w*?)Y"
     return re.findall(patron,string)
 
 print(entre_X_Y_con_ab("XbaaaYjXababYqXbabbbbaaYqXffeeeY"))
+
+#abab   babbbaa
+
 
 #Si no se puede: "X[^XY]*ab[^XY]Y"
 

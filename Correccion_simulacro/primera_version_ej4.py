@@ -3,7 +3,6 @@ class PacMan:
     def __init__(self):
         self.vida = 3
         self.puntos = 0
-        self.velocidad = 1
 
     def comer_bolitas(self,cantidad):
         self.puntos += (cantidad *2)

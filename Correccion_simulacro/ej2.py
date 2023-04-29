@@ -8,7 +8,7 @@ def filtrar ():
             for archivo in lista_txt: 
                 with open(archivo, 'r') as archivo_secreto: 
                     texto = archivo_secreto.read()
-                    lista = re.findall('[a-z0-9]+[.-]?[a-z0-9]+[.-]?\w*@gmail.com', texto)
+                    lista = re.findall('\w+[-_\.]*\w+@gmail.com', texto)
                     for email in lista: 
                         arch.write(email + '\n')
 print(filtrar())
