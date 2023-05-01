@@ -18,9 +18,10 @@ class Golondrina:
 
   def esta_feliz(self):
     return self.energia > 50
-  
+
   def entrenar(self):
     self.entrenar(0)
+
 
 class Dragon:     
   def __init__(self, cantidad_dientes, energia):

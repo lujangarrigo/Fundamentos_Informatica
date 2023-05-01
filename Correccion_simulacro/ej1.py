@@ -15,30 +15,31 @@ print(entre_X_Y_con_ab("XbaaaYjXababYqXbabbbbaaYqXffeeeY"))
 #XacXlabclY
 
 
-#b) 
+#b)
 def funcionDeExpresiones_Regulares():
     return re.findal("ag(\d.*?)cta")
 
+#print(funcionDeExpresiones_Regulares())
+
 """
 i. Falso, le falta un parámetro, y el nombre deberia ser: funcion_de_expresiones_regulares (convencion de python) 
-o funcionDeExpresiones_regulares- Además el nombre debe expresar qué va a hacer, no se debe especificar que es funcion
+o funcionDeExpresionesRegulares- Además el nombre debe expresar qué va a hacer, no se debe especificar que es funcion
 Deberia ser entre_ag_y_cta
 
-ii. Es error es AtributeError porque tiene una sola l
+ii. El error es AtributeError porque tiene una sola l el findall
 
-iii. Falso porque debería haber ag y un número, seguido de cualquier cosa. (no va a devolver eso pq no hay números).
+iii. Falso, lanza AtributeErros, no SyntaxError
+
+iv. Falso porque debería haber ag y un número, seguido de cualquier cosa. (no va a devolver eso pq no hay números).
 Para que de eso debemos escribir así a la función:
 """
 
-def funcionDeExpresiones_Regulares1(string):
+def entre_ag_y_cta(string):
     return re.findall("ag([^\d]*)cta",string) # o "ag(\D*)cta"
 
-print(funcionDeExpresiones_Regulares1("aabocaggaaactazu4lggaasag24gra1ndecta"))
-"""
-iv. Verdadero, devuelve eso porque busca ag + un caracter numérico + cualquier cosa 0 o más veces.
-"""
+print(entre_ag_y_cta("aabocaggaaactazu4lggaasag24gra1ndecta"))
 
-def funcionDeExpresiones_Regulares2(string):
-    return re.findall("ag(\d.*?)cta",string)
-
-print(funcionDeExpresiones_Regulares2("aabocaggaaactazu4lggaasag24gra1ndecta"))
+"""
+iv. Verdadero, devuelve eso porque busca ag + un caracter no numerico 0 o más veces + cta
+v. Falso, porque la función busca que no haya dígitos entre ag y cta
+"""

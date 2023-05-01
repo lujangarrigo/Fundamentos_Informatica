@@ -6,12 +6,14 @@ Estos mensajes se llaman métodos.
 Los objetos tienen un estado, dado por sus atributos
 """
 
-print("Energía que tiene al comienzo Pepita:",pepita.energia)
+print("Energía que tiene al comienzo Pepita:", pepita.energia) #Para usar un atributo hacemos objeto.atributo
 print(pepita.volar_en_circulos())
+print("Energía que tiene luego de volar en círculos:", pepita.energia)
 #pepita sabe volar porque no se queja (no hay error)
 
 #print(pepita.hablar())
 #pepita no sabe hablar (attribute error)
+print(pepita.volar(3))
 print("Energía que tiene luego de volar:",pepita.energia)
 print(pepita.comer_alpiste(200)) #200 gramos
 print("Energía que tiene lugeo de comer:",pepita.energia)
@@ -20,7 +22,7 @@ print("Energía que tiene lugeo de comer:",pepita.energia)
 Ahora sabemos que cuando le damos órdenes, hace algo y cambia algo en su estado (energía)
 También sabemos que tiene una energía basal
 El estado de pepita está dado por su energía
-Y como atributos volar y comer alpiste
+Y como metodos tiene volar y comer alpiste
 El estado de los objetos puede cambiar o modificarse
 """
 
@@ -36,7 +38,10 @@ anastasia #me muestra que es una golondrina
 print("Ahora utilizamos a roberta, Energía al comienzo:", roberta.energia)
 #Tiene 1000 de energía basal
 roberta.volar_en_circulos()
-print("Energía después de volar:", roberta.energia) #gasta solo 1 de energía
+print("Energía después de volar en circulos:", roberta.energia) #gasta solo 1 de energía
+roberta.volar(3)
+print("Energía despues de volar 3 kms: ", roberta.energia)
+
 #roberta.comer_alpiste(200)
 #print("Energía luego de comer:",roberta.energia) 
 #Ups Roberta es un Dragón, no come alpiste
@@ -57,3 +62,4 @@ print(roberta.esta_feliz())
 
 #juanita.correr_en_circulos()
 #print("Energía luego de comer:", juanita.energia)
+

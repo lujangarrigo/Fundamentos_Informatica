@@ -3,18 +3,18 @@ class Enterprise:
         self.potencia = 50
         self.coraza = 5
 
-    def potencia(self):
+    def potencia_actual(self):
         return self.potencia
     
-    def coraza(self):
+    def coraza_actual(self):
         return self.coraza
     
     def encontrarPilaAtomica(self):
-        potencia = max(self.potencia + 25,100) 
+        potencia = min(self.potencia + 25,100) 
         self.potencia = potencia
 
     def encontrarEscudo(self):
-        coraza = max(self.coraza + 10,50) 
+        coraza = min(self.coraza + 10,50) 
         self.coraza = coraza
 
     def recibirAtaque(self, puntos):
@@ -33,4 +33,26 @@ class Enterprise:
             elif self.potencia <= puntos_restantes:
                 self.ppotencia = 0
 
+    def fortalezaDefensiva(self):
+        return self.coraza + self.potencia
     
+    def necesitaFortalecerse(self):
+        return self.coraza==0 and self.potencia<20
+    
+    def fortalezaOfensiva(self):
+        if self.potencia<20:
+            return 0
+        else:
+            return (self.potencia-20)/2
+
+
+enterprise = Enterprise()
+enterprise.encontrarPilaAtomica()
+enterprise.recibirAtaque(14)
+enterprise.encontrarEscudo()
+print(enterprise.coraza_actual())
+print(enterprise.potencia_actual())
+
+print(enterprise.fortalezaDefensiva())
+print(enterprise.necesitaFortalecerse())
+print(enterprise.fortalezaOfensiva())
