@@ -15,13 +15,13 @@ class Titan:
         return self.salud *8/100
 
     def destruir_casas(self):
-        if (self.cuantas_casas() > 1):
-            if ((self.cuantas_casas() % 1) > 0):
-                self.salud -= (self.cuantas_casas() // 1) * 12.5
+        if (self.cuantas_casas() > 1): # si puede destruir mas de 1 casa, no pongo >= pq se muere si tiene la energia justa solo para destruir 1
+            if ((self.cuantas_casas() % 1) > 0): # Si tengo un numero con coma ej 4,25, destruye 4 y esos 0,25 van a ser la salud q le va a quedar
+                self.salud -= (self.cuantas_casas() // 1) * 12.5 # le resto a la salud la cantidad de casas // 1 (la division entera), o sea el número entero * 12,5, que es lo q se le debe restar a la salud
             else:
-                self.salud -= (self.cuantas_casas() - 1) * 12.5
+                self.salud -= (self.cuantas_casas() - 1) * 12.5 # si no es numero con coma vamos a restarle 1 para que quede con energia
         else:
-            print("No puede destruir ninguna casa")
+            print("No puede destruir ninguna casa") #El titan no puede morirse, por eso hacemos estos if
     
     def grito(self):
         return "¡Aaaarrrg!"

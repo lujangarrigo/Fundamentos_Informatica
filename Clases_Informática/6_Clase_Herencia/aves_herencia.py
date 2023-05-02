@@ -27,6 +27,7 @@ class Golondrina:
   def entrenar(self):
     self.entrenar(0)
 
+
 class Dragon:     
   def __init__(self, cantidad_dientes, energia):
     self.energia = energia
