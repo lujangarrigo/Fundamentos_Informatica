@@ -9,7 +9,7 @@ y por otro lado la cantidad de líneas. Por último, hay que crear una carpeta q
 import os, glob, sys
 
 def ejercicio_rutas():
-    os.chdir("Informes") #Suponemos que estamos en la carpeta, si está carpetas arriba se hace ../../
+    os.chdir("Informes") #Entramos a la carpeta, si está carpetas arriba se hace ../../
     txt = glob.glob("*.txt")
     cantidad_estado = [] #va a contar la cantidad que hay "estado" en cada archivo
     cantidad_lineas = [] #cuenta la cantidad de lineas de cada archivo
