@@ -1,0 +1,15 @@
+Un sistema de control de versiones es una herramienta que realiza un seguimiento de los cambios de un documento o directorio de forma automática, creando efectivamente diferentes versiones de nuestros archivos. Vamos a usar el programa Git.
+
+Cada registro de estos cambios se denomina commit y mantiene metadatos (referencias temporales y de autorías) útiles sobre ellos. El historial completo de commits para un proyecto en particular y sus metadatos forman un repositorio.
+
+git add . → coloca las cosas que cambiamos en el área index de Git
+git commit -m “mensaje” → registra permanentemente los cambios.
+git stash → guardamos el archivo cambiado en un stash (lo almacena temporalmente), y se pueden reutilizar haciendo git stash apply.
+git stash show → muestra los cambios del archivo guardado en un stash.
+git stash list → muestra lista de los stash.
+git clone → para clonar o descargar un repositorio remoto a nuestra computadora. 
+git push → para subir los commits hechos localmente hasta el momento
+git pull → para bajar los cambios que puedan existir en el repositorio remoto (origin).
+git status → muestra los archivos modificados a los que no le hicimos git commit.
+git diff → compara archivos, cambios, ramas, etc.
+git ignore → ocultar archivos “basura”.

@@ -1,0 +1,36 @@
+El módulo os de python:
+os.stat: nos permite obtener estadísticas de un archivo (como por ejemplo su tamaño) → os.stat(“archivo.txt”)
+os.rename: nos permite renombrar archivos → os.rename(“nombre_actual.txt”, “nuevo_nombre.txt”)
+os.rmdir: nos permite eliminar directorios → os.rmdir(“nombre_carpeta”)
+os.mkdir: crea un directorio(carpeta). → os.mkdir(“nombre_carpeta”)
+os.listdir() es igual a ls. → print(os.listdir())
+os.chdir(“nombre_carpeta” o path) se usa para moverse de directorio
+
+
+El submódulo os.path:
+os.path.dirname: nos permite obtener el directorio donde un archivo está contenido → os.path.dirname('/home/User/Documents') → devuelve \home\User.
+os.getcwd: nos permite conocer el directorio donde estamos → os.getcwd()
+os.path.exists: nos permite saber si existe un archivo → os.path.exists("archivo.txt") → devuelve True o False.
+os.path.join: nos permite concatenar rutas (por ejemplo, combinar /una ruta para obtener /una/ruta) → os.path.join(“\home”, "User/Desktop", "file.txt") → devuelve: /home\User/Desktop\file.txt
+
+
+El método glob
+Para acceder a los archivos que hay dentro de un determinado directorio usamos:
+os.listdir() → nos da una lista con todos los archivos de una carpeta
+glob.glob(“*”) → también nos da todos los archivos de una carpeta
+glob.glob(“*.py”) → nos da solo los archivos .py
+glob.glob(“*.txt”) → nos da solo los archivos .txt
+
+
+Sys
+
+El módulo sys nos dará acceso a sys.argv: una lista que contiene el nombre del script y los argumentos con los que se ejecuta un programa:
+Argv es una función que nos permite agregar elementos directamente desde la terminal y jugar con esto. 
+
+
+Ejemplo:
+import sys
+numero1 = int(sys.argv[1])
+numero2 = int(sys.argv[2])
+suma = numero1 + numero2
+En la terminal: python nombre_del_archivo.py 2 4

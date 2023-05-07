@@ -1,0 +1,20 @@
+Modos de apertura:
+r: solo para lectura
+r+: para lectura y escritura.
+a: para agregar información al final del archivo (si no existe el archivo lo crea)
+w: para escribir (sobreescribe el archivo si ya existe, si no existe crea uno).
+
+Apertura de archivos (2 formas):
+
+open(path_al_archivo, modo)
+archivo.close()
+Si lo abrimos de esta forma es necesario cerrarlo porque sino ralentiza la máquina.
+
+with open(path_al_archivo, modo) as miarch:
+De esta forma se mantiene abierto al ejecutar y se cierra automáticamente.
+
+
+Lectura de archivos
+archivo.read(): lee todo el archivo como si fuera 1 string.
+archivo.readlines(): lee las líneas del archivo y las devuelve como lista.
+archivo.readline(): lee el número de caracteres que hay en una línea.

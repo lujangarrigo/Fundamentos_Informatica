@@ -1,0 +1,26 @@
+Definiciones:
+Instancias = objetos (son ejemplos de su clase)
+Instanciación = el acto de crear un objeto 
+Constructor = __init__
+Clase = la estructura abstracta que representa al objeto
+Métodos = mensajes que entiende y ejecuta el objeto
+Interfaz = conjunto de mensajes que entienden
+Estado = conjunto de atributos (los atributos son los que se definen en el init)
+Polimorfismo = cuando dos clases comparten toda su interfaz hay polimorfismo absoluto, cuando comparten parte de la interfaz es polimorfismo parcial.
+Para que haya polimorfismo debe haber una tercera clase que le mande el mismo mensaje a las dos clases. Cuando no hay una tercera clase hay polimorfismo potencial.
+Herencia = cuando se crea una clase hija que herede de una clase madre (evitamos código repetido).
+Self = la referencia al propio objeto.
+
+Diferencias entre métodos y funciones:
+Las funciones se invocan como función(argumentos), pero los métodos se evalúan a través el envío de mensajes como objeto.mensaje(argumentos).
+Los métodos tienen siempre declarado como primer parámetro self, las funciones no
+Los métodos siempre van dentro de una clase, mientras que las funciones van por fuera.
+
+Diferencia método y procedimiento: el método está dentro de una clase, este puede retornar o no retornar cosas, mientras que los procedimientos nunca retornan nada, generan un efecto.
+
+Acceder a los atributos → objeto.atributo, NO se usan paréntesis como en los mensajes.
+Cuando les enviamos mensajes, cada objeto le pregunta qué hacer a su clase. Este concepto es conocido como method lookup (búsqueda del método).
+
+Clases abstractas: cuando no las vamos a instanciar
+Clases concretas: las vamos a instanciar
+
