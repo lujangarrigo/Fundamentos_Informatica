@@ -1,6 +1,7 @@
 class EstudianteDeVeterinaria:
   def alimentar(self,animal,gramos):
     return animal.comer(gramos)
+  
   def rehabilitar(self,animal):
     return animal.recibir_rehabilitacion
   
@@ -8,7 +9,7 @@ class EstudianteDeVeterinaria:
     return animal.esta_feliz()
 
 class Gato:
-  def __init__(self,una_energia, una_edad):
+  def __init__(self, una_energia, una_edad):
     self.energia = una_energia
     self.edad = una_edad
 
@@ -58,3 +59,11 @@ class Golondrina:
     
   def esta_feliz(self):
     return self.ciudad == "Lihuel Calel"
+
+camila = EstudianteDeVeterinaria
+chispitas = Gato(100,3)
+camila.alimentar(chispitas,10)
+print("Energia de chispitas luego de ser alimentado:",chispitas.energia)
+chispitas.cumplir_anios() #uso de método
+chispitas.edad
+chispitas.energia
