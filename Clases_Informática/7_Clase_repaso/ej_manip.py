@@ -18,6 +18,6 @@ def extraer_celulares(ruta_a_txt, ruta_a_resultado, archivo_de_salida):
 
     with open (archivo_de_salida, "a") as archivo_salida:
         for celular in lista_celulares:
-            archivo_de_salida.write(celular + "\n")
+            archivo_salida.write(celular + "\n")
 
 extraer_celulares("Informes/Datos","Resultado","Celulares.txt")

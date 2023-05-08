@@ -4,13 +4,14 @@
 
 import os,glob
 
-def contenidos_txt_en__carpeta_resultado(carpeta1):
-    os.chdir(carpeta1)
+def contenidos_txt_en__carpeta_resultado(carpeta_entrada,carpeta_salida,ruta_a_archivo_salida):
+    os.chdir(carpeta_entrada)
+    os.mkdir(carpeta_salida)
     archivos_txt = glob.glob("*.txt")
     for archivo in archivos_txt:
         with open(archivo,"r") as txt:
             contenido = txt.read()
-            with open("archivo_salida1.txt","a") as file:
+            with open(ruta_a_archivo_salida,"a") as file:
                 file.write(contenido)
 
-contenidos_txt_en__carpeta_resultado("../Práctica")
+contenidos_txt_en__carpeta_resultado("../Práctica","Resultado","Resultado/archivo_ej10.txt")

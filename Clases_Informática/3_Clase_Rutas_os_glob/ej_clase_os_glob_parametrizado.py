@@ -6,24 +6,24 @@ que hayan allí. Por cada archivo hay que obtener, por un lado, cuantas veces ap
 y por otro lado la cantidad de líneas. Por último, hay que crear una carpeta que se llame Apellidos, donde
  hay que crear un archivo llamado Lista.txt que contenga en cada línea la primera línea de cada archivo .txt 
  obtenida anteriormente."""
-import os, glob
- 
-def ejercicio_rutas():
-    os.chdir('../informes')#Suponemos que estamos dentro de la carpeta, si está carpetas arriba se hace ../../
+import os, glob, sys
+
+def ejercicio_rutas(ruta_a_carpeta_con_txt,ruta_a_carpeta_salida,archivo_salida):
+    os.chdir(ruta_a_carpeta_con_txt) #Entramos a la carpeta, si está carpetas arriba se hace ../../
     txt = glob.glob("*.txt")
     cantidad_estado = [] #va a contar la cantidad que hay "estado" en cada archivo
     cantidad_lineas = [] #cuenta la cantidad de lineas de cada archivo
-    for archivo in txt: #for elemento in lista
+    for archivo in txt: 
         with open(archivo,"r") as file: #abrimos los archivos
-            file_completa = file.read #readline se usa en for pq lee una linea y pasa a la otra, va a contar si estado está dos veces en una linea (readlines no)
+            file_completa = file.read() #readline se usa en for pq lee una linea y pasa a la otra, va a contar si estado está dos veces en una linea (readlines no)
             cantidad_estado.append(file_completa.count("estado"))
             cantidad_lineas.append(file_completa.count("\n"))
-    os.mkdir("Apellidos")
-    with open("Apellidos/Lista.txt","w") as salida: #usamos salida cuando abrimos un archivo.txt que vamos a escribir
+    os.mkdir(ruta_a_carpeta_salida)
+    with open(archivo_salida,"w") as salida: #usamos salida cuando abrimos un archivo.txt que vamos a escribir
         for archivo in txt:
             with open(archivo,"r") as file: #file es la variable q usamos al abrir un archivo.txt q vamos a leer
                 salida.write(file.readline())
-    return cantidad_estado , cantidad_lineas
+    return cantidad_estado, cantidad_lineas
 
-c1, c2 = ejercicio_rutas()
+c1, c2 = ejercicio_rutas("Informes","Apellidos","Lista.txt")
 print(c1,c2)
