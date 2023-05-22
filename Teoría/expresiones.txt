@@ -1,9 +1,9 @@
 Coincidencias Básicas
 .       - Cualquier Carácter, excepto nueva línea
-\d     - Cualquier Dígito (0-9)
-\D     - No es un Dígito (0-9)
-\w     - Caracter de Palabra (a-z, A-Z, 0-9, _)
-\W    - No es un Carácter de Palabra.
+\d      - Cualquier Dígito (0-9)
+\D      - No es un Dígito (0-9)
+\w      - Caracter de Palabra (a-z, A-Z, 0-9, _)
+\W      - No es un Carácter de Palabra.
 \s      - Espacios de cualquier tipo. (espacio, tab, nueva línea)
 \n      - Salto de línea
 \S      - No es un Espacio, Tab o nueva línea.
