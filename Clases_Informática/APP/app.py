@@ -18,9 +18,9 @@ def home():
     return render_template("home.html") #renderiza ese html y lo va a buscar a la carpeta template
 #<p> etiqueta de html que se usa para poner texto en una pág web
 
-@app.get("/prendas")
+@app.get("/prendas/")
 def get_all_prendas():
-    return f"<p>Mostrando todas las prendas</p>"
+    return render_template("prendas.html", prendas=prendas)
 
 @app.get("/prendas/<id>")
 def get_prenda(id):

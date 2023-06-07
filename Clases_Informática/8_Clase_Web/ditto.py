@@ -16,6 +16,7 @@ pokeapi.co --> dominio
 respuesta = requests.get("https://pokeapi.co/api/v2/pokemon/ditto")
 contenido = respuesta.json() #me da todos los contenidos asociados al recurso ditto, con los detalles de las habilidades, base de experiencia, forma, peso, etc. 
 print(contenido.keys())
+print(type(contenido))
 
 print(respuesta) #devuelve el status
 print("El status code es: ",respuesta.status_code)

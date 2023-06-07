@@ -29,3 +29,4 @@ headers = {'Content-Type':'application/json;charset=utf-8'}
 #cuando hacemos post, se actualiza el id, se agrega un elemento con el numero del ultimo id + 1, por eso agregamos el elemento 201
 a = requests.post("https://jsonplaceholder.typicode.com/todos", data = json.dumps(data),headers = headers)
 print(a.json())
+#te da el id 201 porque siempre pone automáticamente el id próximo al último
